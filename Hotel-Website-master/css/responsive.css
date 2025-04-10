@@ -1,0 +1,111 @@
+/* responsive.css */
+
+/* Base reset if needed */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Tablets (768px and below) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #fff;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: #333;
+    }
+  
+    .home .head_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .home .text h2 {
+      font-size: 28px;
+    }
+  
+    .home .image_item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .about .flex,
+    .restaurant .flex {
+      flex-direction: column;
+    }
+  
+    .about .left,
+    .about .right,
+    .restaurant .left,
+    .restaurant .right {
+      width: 100%;
+    }
+  
+    .about .text h2,
+    .restaurant .text h2 {
+      font-size: 26px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-info,
+    .footer-social {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Phones (480px and below) */
+  @media (max-width: 480px) {
+    .home .text h2 {
+      font-size: 22px;
+    }
+  
+    .btn1, button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .content .box {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .wrapper .text h2,
+    .about .text h2 {
+      font-size: 22px;
+    }
+  
+    .footer-bottom p {
+      font-size: 14px;
+    }
+  }
+  

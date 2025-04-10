@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Escape to Nivara Agro Tourism in Tapola, Mahabaleshwar — where nature meets comfort. Enjoy riverside stays, bonfires, boating, and authentic village experiences."
+    />
+    <meta
+      name="keywords"
+      content="Agro Tourism Tapola, Mahabaleshwar Stay, Riverside Resort, Village Experience, Kayaking Tapola, Bonfire, Boating Mahabaleshwar"
+    />
+    <meta name="author" content="Nivara Agro Tourism" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/room.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <header class="header" id="navigation-menu">
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo"> Nivara Agro Tourism</a>
+
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="./index.html" class="nav-link">About</a></li>
+            <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+            <li><a href="./gallary.html" class="nav-link">Gallery</a></li>
+            <li><a href="./contactus.html" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script>
+      const hambuger = document.querySelector(".hambuger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hambuger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hambuger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hambuger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+
+    <section class="room top" id="room">
+      <div class="container">
+        <div class="heading_top flex1">
+          <div class="heading">
+            <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+            <h2>Rooms</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="./image/8.jpg" alt="Image 1" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/hotel main.jpg" alt="Image 2" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/18.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/22.jpg" alt="Image 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/24.jpg" alt="Image 5" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/15.jpg" alt="Image 6" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/19.jpg" alt="Image 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/25.jpg" alt="Image 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="./image/31.JPG" alt="Image 2" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Contact Us</h3>
+          <p>
+            <strong>Address:</strong> A/p Tapola, Mahabaleshwar, Satara,
+            Maharashtra 412806
+          </p>
+          <p><strong>Phone:</strong> 9404251280 , 8788513715</p>
+          <p><strong>Email:</strong> info@hotelwebsite.com</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <!-- <a href="#" target="_blank">Facebook</a> -->
+          <a
+            href="https://www.instagram.com/hotel_nivara?igsh=ZTVldGl5OTBpZGw4"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nivara Agro Tourism. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
